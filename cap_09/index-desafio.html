@@ -1,0 +1,46 @@
+<html charset="UTF-8">
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+var alunos = [
+	{
+		nome: 'Jose',
+		idade: 20
+	},
+	{
+		nome: 'Andre',
+		idade: 10
+	},
+	{
+		nome: 'Julio',
+		idade: 24
+	},
+	{
+		nome: 'Maria',
+		idade: 18
+	}
+];
+
+var validarIdade = function(aluno){
+	if(aluno.idade >= 18){
+		console.log(aluno.nome + ' e maior de idade');
+	}else{
+		console.log(aluno.nome + ' e menor de idade');
+	}
+};
+
+for (var index in alunos) {
+	var aluno = alunos[index];
+	
+	validarIdade(aluno);
+}
+
+
+</script>
+
+</body>
+</html>

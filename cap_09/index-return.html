@@ -1,0 +1,64 @@
+<html charset="UTF-8">
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+// function somar(valor1, valor2) {
+//     return valor1 + valor2;
+// }
+// 
+// function somarSemReturn(valor1, valor2){
+//     var soma = valor1 + valor2;
+// }
+// 
+// console.log(somarSemReturn(1,2));
+// console.log(somar(1,2));
+// 
+// 
+// function Carro(){
+//   this.nome = 'gol';
+//   this.ano = '2014';
+//   this.cor = 'preto';
+//   this.andar = function(){
+//     //lógica para andar o carro
+//   }
+//   return
+// }
+// var carro = new Carro();
+// var carro2 = Carro();
+// 
+// console.log(carro);
+// console.log(carro2);
+
+
+function somar(valor1, valor2){
+    
+    if(valor1 && valor2){
+        console.log('resultado ' + (arguments.length == 2));
+        return valor1 + valor2;
+    }else if (valor1){
+        console.log('resultado ' + (arguments.length == 2));
+         this.valor1 = valor1;
+         console.log('valor do this ' + this.valor1);
+         var that = this;
+         return function(valor2){
+           return that.valor1 + valor2;
+         }
+    }
+}
+
+console.log(somar(1,2)); //3
+var com = somar(1);
+console.log(com(3));//4
+console.log(com(4));//5
+console.log( ( somar(1) ) (5) ); //6
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html charset="UTF-8">
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+var contas = [
+    {
+        nome: 'Ailton',
+        conta: 123456,
+        valor: 1000.00
+    }
+];
+
+var sacar = function(contas, numero, valor) {
+    
+	for(index in contas){
+        var conta = contas[index];
+        if(conta.conta == numero){
+            if(valor <= conta.valor){
+				var saldoConta = function(valor){
+					console.log(conta.valor);
+					return Math.floor(conta.valor - valor);
+				};
+				console.log('Você pode sacar esse valor, mais o seu saldo vai ficar ' + saldoConta(valor));
+            } else {
+                console.log('Você não pode saca este valor. Sua conta tem o o valor de ' + conta.valor);
+            }
+        } else { console.log('O numero informado não corresponde a nehuma conta.') }
+    }
+	
+}
+
+sacar(contas, 123456, 400);
+
+
+</script>
+
+</body>
+</html>

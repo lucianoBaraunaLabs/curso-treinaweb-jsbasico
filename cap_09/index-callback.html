@@ -1,0 +1,26 @@
+<html charset="UTF-8">
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+// Explicando callback
+
+var somar = function somar(valor1, valor2){
+	if(arguments.length !== 2)
+	throw new Error ('Está função precisa de dois valores para funcionar');
+	return valor1 + valor2
+}
+
+var calcularSalario = function(salario, horaExtra, somar){
+  return somar;
+}
+
+console.log(calcularSalario(660,120,somar));
+
+
+</script>
+</body>
+</html>
