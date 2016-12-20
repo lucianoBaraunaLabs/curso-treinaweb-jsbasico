@@ -1,0 +1,47 @@
+<html charset="UTF-8">
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+// Variando formas de chamar a expressões de funcao como argumento.
+
+// Forma 1
+var somar = function(valor1, valor2){
+   return valor1 + valor2;
+}
+
+var calcularSalario = function(salario, horaExtra, somar) {
+	return somar(salario, horaExtra);
+}
+
+console.log(calcularSalario(1000,120, somar));
+
+// Forma 2
+var calcularSalario = function(salario, horaExtra, acao) {
+	return acao(salario, horaExtra);
+}
+
+console.log(calcularSalario(1000,120,function(valor1, valor2) {
+	return valor1 - valor2
+}))
+
+
+var somar = function somar(valor1, valor2){ // Evidenciando melhor o erro ao passar um nome para a expressão da função
+	if(arguments.length !== 2)
+	throw new Error ('Está função precisa de dois valores para funcionar');
+	return valor1 + valor2
+}
+
+var calcularSalario = function(salario, horaExtra, somar){
+  return somar(salario,horaExtra,somar);
+}
+
+console.log(calcularSalario(660,120,somar));
+
+
+</script>
+</body>
+</html>
