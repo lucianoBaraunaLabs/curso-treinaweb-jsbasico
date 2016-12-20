@@ -1,0 +1,36 @@
+<html charset="UTF-8">
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+var qtdVoltas = 100,
+    valVolta = 0; // metros
+
+for(var numVoltas = 0; numVoltas < qtdVoltas; numVoltas++){
+  valVolta += 20;
+  // console.log(numVoltas);
+  // console.log(valVolta);
+  if(numVoltas == 99){
+    console.log('Você está na penultima volta!!!!!');
+  }
+  console.log("Você já está na volta " + numVoltas + '\n' +
+              "E já correu " + valVolta + " metros");
+}
+
+while(volta < 100){
+  volta++;
+  distanciaPercorrida += 20;
+  if(volta == 99){
+    console.log('Penultima volta da corrida');
+  }
+  console.log(volta);
+  console.log('Distancia: ' + distanciaPercorrida);
+}
+
+
+</script>
+</body>
+</html>
