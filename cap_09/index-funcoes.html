@@ -1,0 +1,26 @@
+<html charset="UTF-8">
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+
+function somar(valor1, valor2) {
+	console.log('Quantidade de argumentos recebidos: ' + arguments.length);
+	console.log('Valor do último argumento: ' + arguments[2]); // pega o valor do terceiro argumento
+	
+	// Limitando o valor de argumentos e externando um erro
+	
+	if(arguments.length !== 2)
+	throw new Error('Está função precisa de dois valores para funcionar');
+	
+	return valor1 + valor2;
+	
+}
+
+somar(1,2,3);
+
+</script>
+</body>
+</html>
