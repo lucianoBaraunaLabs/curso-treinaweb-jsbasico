@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+//Decalrando variaveis
+var curso = {
+  nome: 'JavaScriptBásico',
+  empresa: 'treinaWeb',
+  alunos:[
+    {nome: 'Bruno', idade: 21, telefone: 999999999},
+    {nome: 'Cleber', idade: 22, telefone: 988888888},
+    {nome: 'Lucas', idade: 23, telefone: 977777777}
+  ]
+}
+  console.log(typeof curso);
+  console.log('Qtd de alunos: '+curso.alunos.length);
+  console.log('curso.alunos.push({nome:\'Kennedy\', idade: 21, telefone:966666666});');
+  curso.alunos.push({nome:'Kennedy', idade: 21, telefone:966666666});
+console.log('Qtd de alunos: '+curso.alunos.length);
+
+</script>
+</body>
+</html>
