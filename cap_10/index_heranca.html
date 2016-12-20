@@ -1,0 +1,52 @@
+<html charset="UTF-8">
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+// function Pai(nome){
+//     this.nome = nome;
+// }
+// 
+// Pai.prototype.digaSeuNome = function(){
+//     return this.nome;
+// }
+// 
+// console.log(new Pai());
+// 
+// function Filho(nome) {
+//     this.nome = nome;
+// }
+// 
+// Filho.prototype = new Pai();
+// 
+// var filho = new Filho('Fred');
+// 
+// console.log(filho);
+// console.log(filho.digaSeuNome());
+
+var user = {name:'José'};
+
+Boolean.prototype.getNomeUsuario = function(){
+    console.log(this.valueOf()); //Retorna tipo primitivo do objeto
+  if(this.valueOf() == true){ 
+    return user.name;
+  }else{
+    return 'Usuário deslogado';
+  }
+}
+
+var temUsuario = true;
+
+console.log(temUsuario.getNomeUsuario()); //Retorna ‘José’
+
+var umBooleanQualquer = false;
+
+console.log(umBooleanQualquer.getNomeUsuario()); //Retorna ‘'Usuário deslogado'
+
+
+</script>
+
+</body>
+</html>
