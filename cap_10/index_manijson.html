@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de Js Básico</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Tipos de se criar onjs
+        // var curso = {}; // forma literal, só pode criar um
+        // 
+        // function Curso(){
+        //     
+        // }
+        // 
+        // var curso2 = new Curso(); // Utilizando construtor, pode ser chamado mais de uma vez
+        // 
+        // console.log(typeof curso)
+        // console.log(typeof curso2)
+        
+        var curso = {
+            nome: 'javascript',
+            ativo: true,
+            alunos: ['andre', 'joao'],
+            getAlunos: function(){ // isso é um metódo.
+                for(index in this.alunos){
+                    console.log(this.alunos[index]);
+                }
+            }
+        }
+        
+        // Manipulando valores
+        console.log(curso.hasOwnProperty('ativo')); // checa se tem a propriedade
+        delete curso.ativo // deletando uma propriedade
+        console.log(curso.hasOwnProperty('ativo')); // false
+        console.log(curso);
+        
+        // Chamando metodo
+        curso.getAlunos();
+        
+        // Formas de acessar valoroes
+        curso.nome = "JSON";
+        var chave = 'nome';
+        console.log(curso['no'+'me']);
+        
+        // Iterando no objeto
+        for(chave in curso){
+            console.log(chave + ': ' + curso[chave]);
+        }
+        
+        
+        
+        
+    </script>
+    
+</body>
+</html>

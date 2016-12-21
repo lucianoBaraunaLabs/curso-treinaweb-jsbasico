@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de Js Básico</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var obj = new Object();
+        console.log(obj);
+        
+        function Veiculo(){}
+        function Carro(){}
+        
+        Carro.prototype = new Veiculo();
+        
+        var gol = new Carro();
+        
+        console.log(gol instanceof Carro);
+        console.log(gol instanceof Veiculo);
+        
+    </script>
+    
+</body>
+</html>

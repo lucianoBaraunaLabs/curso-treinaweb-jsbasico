@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        var texto = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis justo dolor. Nulla facilisi. Vestibulum finibus eu justo eget elementum. Curabitur molestie ullamcorper risus, a eleifend magna. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibust TreinaWeb. Curabitur bibendum eu est consequa maximus. Nulla facilisi. In massa nisi, vestibulum ut cursus et, congue vitae nunc. Duis nunc magna, semper ut leo sed.';
+        
+        // Forma 1    
+        var nome = "TreinaWeb";
+        var indice = texto.indexOf(nome);
+        
+        console.log(texto.slice(indice, indice + nome.length));
+        
+        // Forma 2
+        // var trecho = texto.match('TreinaWeb');
+        // console.log(trecho[0]);
+        
+        // Forma 3
+        // var palavras = texto.split(' ');
+        // console.log(palavras);
+        // 
+        // for (var i = 0; i < palavras.length; i++) {
+        //     if(palavras[i] == 'TreinaWeb.'){
+        //         console.log(palavras[i])    
+        //     }
+        //     
+        // }
+        
+        
+        
+        
+    </script>
+</body>
+</html>
