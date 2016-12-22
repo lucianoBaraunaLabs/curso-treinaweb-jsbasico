@@ -6,36 +6,58 @@
 </head>
 <body>
     <script type="text/javascript">
-    //   var hoje = new Date();
 
-    //   var dia = hoje.getDate();
-    //   var mes = hoje.getMonth() + 1; // Para o mês vigente é preciso somar +1 por que os meses são de base 0.
-    //   var ano = hoje.getFullYear();
+        // var hoje = new Date();
+        // console.log(hoje);
+        // console.log(typeof hoje);
 
-    //   var hora = hoje.getHours();
-    //   var minuto = hoje.getMinutes();
-    //   var segundo = hoje.getSeconds();
+        // var aniversario = new Date('06/15/1988 13:12:12'); // setando uma forma de data direto no date
+        // console.log(aniversario);
+        
+        // var aniversario = new Date(1988,06,15,13,12,12);
+        // console.log(aniversario);
 
-    //   var diasSemana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabado'];
+        // hoje.setFullYear(1988); // setando ano
 
-    //   var diaSemana = hoje.getDay();
+        // var dia = hoje.getDate();
+        // var mes = hoje.getMonth() + 1; // Precisa colocar +1 para achar o mês correto, por conta da base 0 padrao do objeto
+        // var ano = hoje.getFullYear();
 
+        // var hora = hoje.getHours();
+        // var minuto = hoje.getMinutes();
+        // var segundo = hoje.getSeconds();
 
-    //   console.log(dia+'/'+mes+'/'+ano);
-    //   console.log(hora+':'+minuto+':'+segundo);
-    //   console.log(diasSemana);
-    //   console.log(diasSemana[diaSemana]);
+        // var diaSemana = hoje.getDay();
+        // var diasSemana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 
-    var data1 = new Date('01/02/1994');
-    var data2 = new Date('01/02/1994');
+        // console.log(dia + '/' + mes + '/' + ano);
+        // console.log(hora + ':' + minuto + ':' + segundo);
+        // console.log(diasSemana[diaSemana]);
 
-    if(data1.getTime() <= data2.getTime()){ // Para conseguir comprar as datas você precisa utilizar <= ao inves de ===
-        alert('Datas iguais')
-    }
-
+        
+        var data1 = new Date('01/21/1994');
+        var data2 = new Date('01/22/1994');
+        
+        
+        
+        // if(data1.getTime() === data2.getTime()) { // para comparar as datas você precisa dos milesegundos.
+        if(data1 >= data2){ // para comparar as datas sem os milesegundos basta utilizar o sinal de >=.
+            alert('Datas iguais');
+        } else {
+            alert('Datas diferentes');
+        }
+        
+        
     
 
 
+
+        
+        
+        
+
+        
+    
     </script>
 </body>
 </html>
