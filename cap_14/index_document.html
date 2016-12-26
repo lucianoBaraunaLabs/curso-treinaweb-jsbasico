@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>    
+  <div id="elementoId" class="elementoClasse" name="elementoNome">Pegando elemento com JavaScript</div>
+  <div id="elementoId1" class="elementoClasse" name="elementoNome">TreinaWeb JavaScript Basico</div>
+  <div id="elementoId2" class="elementoClasse2" name="elementoNome2">O Objeto Document</div>
+  <div id="elementoId3" class="elementoClasse2" name="elementoNome2">Manipulando DOM</div>
+  <div id="elementoId4" class="elementoClasse2" name="elementoNome2">Trabalhando com JavaScript</div>
+
+  <!-- Isso é um comentario em HTML -->
+  <!-- Script para pegar a tag div -->
+  <script type="text/javascript">
+    //aqui dentro colocamos códigos JavaScript
+    var elementoId = document.getElementById('elementoId');
+    var elementosClasse = document.getElementsByClassName('elementoClasse');
+    var elementosNome = document.getElementsByName('elementoNome');
+    var elementosTag = document.getElementsByTagName('div');
+
+    console.log(elementoId);
+    console.log(elementosClasse);
+    console.log(elementosNome);
+    console.log(elementosTag);
+
+    console.log('Qtd class(elementoClasse) = '+elementosClasse.length);
+    console.log('Qtd name(elementoNome) = '+elementosNome.length);
+    console.log('Qtd tag(div) = '+elementosTag.length);
+  </script>
+</body>
+</html>
