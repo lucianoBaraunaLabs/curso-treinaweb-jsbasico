@@ -6,20 +6,49 @@
 </head>
 <body>
     <script type="text/javascript">
-       
-        var d = new Date();
-        
-        var anoAtual = d.getFullYear(),
-            anoFuturo = d.getFullYear()+1;
-           
-       
-        
-        console.log(anoAtual);
-        console.log(anoFuturo);
-        console.log(d.getFullYear(anoAtual - anoFuturo));
 
-        // console.log(meuAniversario - ano);
+        var aniversario = new Date('01/22/1988 23:59:59');
+                
+        var validarAniversario = function(aniversario){
+            var hoje = new Date();
+            return hoje.getDate() == aniversario.getDate() && hoje.getMonth() == aniversario.getMonth();
+        }
+        
+        var diasParaAniversario = function (aniversario) {
+            var hoje = new Date();
+            aniversario.setFullYear(hoje.getFullYear()); // Igualando os anos, atualizando o ano da data de nascimento com o ano de hoje.
+            
+            if(+hoje > +aniversario){ //Checando se o aniversario já passou.
+                aniversario.setFullYear(hoje.getFullYear()+1); // Colocando o ano do aniversario para acontecer só no ano que vem.
+            }
+            
+            var um_dia_ms = 1000 * 60 * 60 * 24;
+            
+            return Math.floor(Math.abs(hoje.getTime() - aniversario) / um_dia_ms);
+            
+        }
+        
+        if(validarAniversario(aniversario)){
+            document.write('Feliz aniversario. '.big());
+        } else {
+            document.write('Faltam '+diasParaAniversario(aniversario)+' dias.');
+        }
+        
 
+
+        
+
+            
+            
+
+
+            
+
+
+        
+
+
+        
     
 
 
