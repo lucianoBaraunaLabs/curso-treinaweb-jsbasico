@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+     
+      var Impressora = function(fila, nome){
+        this.nome = nome;
+        this.itens = fila;
+        console.log('Nome da impressora: ' + this.nome);
+        
+        this.imprimir = function(){
+            var fila = this.itens;
+            var array = []
+            for(var i = 0; i <= fila.length; i++){
+                if(typeof fila[i] !== 'undefined'){
+                    array.push(fila[i]);
+                    console.log(array);
+                }
+            }
+            return array
+        };
+        
+        this.corrida = function(valor){
+            var fila = this.itens;
+            if(valor.length === fila.length){
+                alert('Impressora: ' + this.nome + ' foi quem terminou primeiro');
+                console.log('======= Terminou =======');
+            }
+        }
+        
+     }
+     
+     var impressoraUm = new Impressora(['Receita', 'Imagem', 'Passaporte', 'Foto Casamento', 'Alvara'], 'HP');
+     impressoraUm.corrida(impressoraUm.imprimir());
+     
+     var impressoraDois = new Impressora(['Doc', 'jpg', 'excel'], 'EPSON');
+     impressoraDois.corrida(impressoraDois.imprimir());
+    //  var impressoraDois = new Impressora(filaImpressaoDois);
+     
+     
+    
+    </script>
+</body>
+</html>

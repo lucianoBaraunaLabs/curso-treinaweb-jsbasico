@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+     var nomes = ['Jose', 'Maria', 'Joao', 'Cleber'];
+    /*
+     
+
+      console.log(nomes[0]);
+      console.log(nomes[1]);
+      console.log(nomes.length);
+      
+      for(var i = 0; i < nomes.length; i++){
+          console.log(i);
+          console.log(nomes[i]);
+      }
+    */
+    
+    /*
+    var nomes = new Array(10); // Só passando um argumento númerico no construtor ele cria os espaços no array
+    
+    console.log(nomes);
+    */ 
+    
+    // var nomes2 = ['Ana', 'Ailton', 'Joaquim'];
+    // var resultado = nomes2.indexOf('Ana');
+    // console.log(nomes[resultado]);
+    
+    // var todosOsNomes = nomes.concat(nomes2);
+    // console.log(todosOsNomes);
+
+    //  nomes.push('Ailton');
+    //  // pop (utilizado para pilhas) shift(utilizado para filas)
+    //  
+    //  console.log(nomes.shift());
+    //  console.log(nomes);
+       
+    //  console.log(nomes.reverse()); // reverte a ordem
+    // console.log(nomes.join(' e ')); // Ele junta o array e troca a virgula pelo o que foi passado
+
+    // console.log(nomes.slice(0,2)); // Ele corta o array o primeiro arg é o ponto de partida e o segundo é até onde ele deve parar
+    
+    // console.log(nomes.sort()); // organiza o array de forma alfabética
+    
+    // var numeros = [23,24,2,1,15,16];    
+    // console.log(numeros.sort(function(a,b){ // para organizar numeros é preciso utilizar uma funcao
+    //     return a-b;
+    // }));
+    
+    // nomes.splice(2,3,'Antonio','Fernando'); // Define apartir de posicoes inicio e fim que os valores iram entrar
+    // console.log(nomes);
+    
+    // Objeto math
+    // random = número aletaório entre 0 e 1
+    // floor = arredonda para baixo
+    // ceil = arredonda para cima
+    // round = caso seja um casa decimal como 2.4 ele coloca para 2
+    // pow = pontencia
+    // sqrt = raiz
+    
+    var indice = Math.floor(Math.random()*nomes.length);
+    console.log(nomes[indice]);
+    
+    console.log(Math.pow(3,2));
+    console.log(Math.sqrt(9));
+    console.log(Math.PI); // const PI
+    console.log(Math.E); // const Euler
+    
+    </script>
+</body>
+</html>
