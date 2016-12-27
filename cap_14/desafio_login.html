@@ -42,16 +42,14 @@
         });
         
         var validarDados = function(login, senha){
-            var validarUser = { user: login, chave: senha };
             for (var i in acessos){
                 console.log('entrei no for in')
-                if (acessos[i].user === validarUser.user && 
-                    acessos[i].chave === validarUser.chave){
+                if (acessos[i].user === login && 
+                    acessos[i].chave === senha){
                     return true;
-                } else {
-                    return false;
                 }
             }
+            return false;
         };
         
         
